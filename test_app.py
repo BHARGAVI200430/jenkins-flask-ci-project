@@ -4,4 +4,4 @@ def test_home():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Jenkins CI Pipeline is working" in response.data
+    assert b"Jenkins deployment updated successfully!" in response.data
